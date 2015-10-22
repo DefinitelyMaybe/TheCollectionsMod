@@ -1,0 +1,152 @@
+﻿GameObjects
+{
+	Equipable
+	{
+		Stone Battleaxe
+		{
+			Tag = "Weapons"
+			
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Equipable.lua"
+				class = "Equipable"
+			
+				arguments
+				{
+					incorrectTierCap = 0
+					encumbrance = 1.0
+
+					swingtransition = "Hswing"
+
+					#Break/Creak info
+					CriticalHitPoints = 8.0
+					CreakingSound = "ItemCreak"
+					BreakSound = "ItemBreak"
+
+					dataMetricCategory = "Weapon"
+					UBPcraft = 5
+					LBPcraft = 4
+					XPcraft = 9
+
+					Affects
+					{
+						"Flesh" = 2
+						"Edible" = 2
+					}
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/Weapons/Stone_Battleaxe.obj"
+				dontCastShadows = 1.0
+				
+				Diffuse
+				{
+					0 = "Models/Weapons/Stone_Battleaxe_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/Weapons/Stone_Battleaxe_norm.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 15.0
+			#	friction = 6.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 10.0
+						convex = 0
+						material = "WOOD"
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			
+			Equipable
+			{
+				name = "Stone Battleaxe"
+				icon = "Stone_Battleaxe"
+				minScale = 1.0
+				maxScale = 1.0
+				
+				category = "Weapon"
+				tier = 2
+				resource = 1
+				durability = 240.0
+				damageToCharacters = 15.00
+				damageToObjects = 5.02
+				staminaDamage = 64.0
+				staminaRegenDelay = 5.0
+				attackSpeedModifier = 0.8
+				maxStackCount = 1.0
+
+				placementSound = "StonePlace"
+				miningEmitter = "Strike Rock Grey Emitter"
+				miningEmitterAlt = "Strike WoodLight Emitter"
+
+				craftingArchetype = "Club"
+
+				Equipment Slots
+				{
+					Tool
+				}
+
+				DamageStates
+				{
+					Used
+					{
+						#damageEmitter not working
+						damageEmitter = "Hit WoodLight Emitter"
+						damageEmitter = "Hit Cactus Emitter"
+
+						durabilityThreshold = 120.0
+						
+						model = "Models/Weapons/Stone_Battleaxe_used.obj"
+
+						Diffuse
+						{
+							0 = "Models/Weapons/Stone_Battleaxe_used_diff.tga"
+						}
+						Normal
+						{
+							0 = "Models/Weapons/Stone_Battleaxe_norm.tga"
+						}
+					}
+					Poor
+					{
+						#damageEmitter not working
+						damageEmitter = "Hit WoodLight Emitter"
+						damageEmitter = "Hit Cactus Emitter"
+
+						durabilityThreshold = 48.0
+						
+						model = "Models/Weapons/Stone_Battleaxe_poor.obj"
+
+						Diffuse
+						{
+							0 = "Models/Weapons/Stone_Battleaxe_poor_diff.tga"
+						}
+						Normal
+						{
+							0 = "Models/Weapons/Stone_Battleaxe_norm.tga"
+						}
+					}
+				}
+			}
+		}
+	}
+}

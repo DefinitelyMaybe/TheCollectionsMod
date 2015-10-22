@@ -1,0 +1,82 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Wall Mount Saber
+		{
+			Tag = "Decor"
+
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/Decor/saber_mount.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/Decor/wall_mount_diff.tga"
+					1 = "Models/Decor/saber_mount_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/Decor/wall_mount_norm.tga"
+					1 = "Models/Decor/saber_mount_norm.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 15.0
+			#	friction = 100.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 100.0
+						convex = 1
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}	
+			Placeable
+			{
+				name = "Wall Mount Saber"
+				icon = "Saber_Mount"
+				minScale = 1.0
+				maxScale = 1.0
+				
+				category = "Decor"
+				tier = 2
+				resource = 1	
+				maxStackCount = 4
+				placeWithNoPhysics = 1
+				
+				survivalFaceCamera = 1
+				
+				placementSound = "WoodPlace"	
+			}
+		}
+	}
+}

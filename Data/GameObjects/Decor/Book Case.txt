@@ -1,0 +1,82 @@
+
+GameObjects
+{
+	PlaceableObject
+	{
+		Book Case
+		{
+			Tag = "Decor"
+			
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				
+				arguments
+				{
+					encumbrance = 1
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/Decor/book_case.obj"
+				
+				Diffuse
+				{
+					0 = "Models/Decor/Book_Case_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/Decor/Book_Case_norm.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 15.0
+			#	friction = 100.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 100.0
+						convex = 1
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}	
+			Placeable
+			{
+				name = "Book Case"
+				icon = "Book_Case"
+				minScale = 1.0
+				maxScale = 1.0
+				
+				category = "Wood"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				placeWithNoPhysics = 1
+				
+				survivalFaceCamera = 1
+				
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}

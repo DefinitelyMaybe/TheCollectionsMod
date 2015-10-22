@@ -1,0 +1,80 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Wood Basket
+		{
+			Tag = "Decor"
+
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				arguments
+				{
+					encumbrance = 1
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			Transform
+			{
+			}
+			StaticGraphics
+			{
+				model = "Models/Decor/basket.obj"
+				dontCastShadows = 1.0
+				Diffuse
+				{
+					0 = "Models/Decor/Wood_Basket_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/Decor/Wood_Basket_norm.tga"
+				}
+			}
+			#RigidBody
+			#{
+			#	activePhysics = 1
+			#	mass = 15.0
+			#	friction = 100.0
+			#}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 100.0
+						convex = 1
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}	
+			Placeable
+			{
+				name = "Wood Basket"
+				icon = "Wood_Basket"
+				minScale = 1.0
+				maxScale = 1.0
+				
+				category = "Decor"
+				tier = 2
+				resource = 1	
+				maxStackCount = 4
+				placeWithNoPhysics = 1
+				
+				survivalFaceCamera = 1
+				
+				placementSound = "WoodPlace"	
+			}
+		}
+	}
+}

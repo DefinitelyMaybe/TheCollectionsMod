@@ -1,0 +1,80 @@
+
+GameObjects
+{
+	PlaceableObject
+	{
+		Plank Door
+		{
+			Tag = "Decor"
+
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Door.lua"
+				class = "Door"
+			
+				arguments
+				{
+					timeToOpen = 2.0
+					angleToOpen = 90.0
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/Decor/plank_door.obj"
+
+				Diffuse
+				{
+					0 = "Models/Decor/Plank_Door_diff.tga"
+					1 = "Models/Decor/Plank_Door_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/Decor/Plank_Door_norm.tga"
+					1 = "Models/Decor/Plank_Door_norm.tga"
+				}	
+			}
+			Placeable
+			{
+				name = "Plank Door"
+				icon = "Plank_Door"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Door"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				placeWithNoPhysics = 1
+
+				survivalFaceCamera = 1
+				tetherDistanceModifier = 2.0
+				
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}

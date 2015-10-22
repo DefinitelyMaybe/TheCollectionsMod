@@ -1,0 +1,120 @@
+﻿GameObjects
+{
+    Equipable
+    {
+        Lodestaff
+        {
+            Tag = "Weapons"
+            
+            Transform
+            {
+            }
+            Script
+            {
+                file = "Scripts/Objects/Equipable.lua"
+                class = "Equipable"
+            
+                arguments
+                {
+                    incorrectTierCap = 3
+                    encumbrance = 0.9
+                    
+                    #Break/Creak info
+                    CriticalHitPoints = 16.0
+                    CreakingSound = "ItemCreak"
+                    BreakSound = "ItemBreak"
+
+                    dataMetricCategory = "Tool"
+                    UBPcraft = 5
+                    LBPcraft = 4
+                    XPcraft = 9
+
+                    Affects
+                    {
+                        "Wood" = 3
+                        "Vegetation" = 3
+                        "Edible" = 3
+                    }
+
+                    swinganimations
+                    {
+                        "ItemHSwing"
+                    }
+                }
+            }
+            StaticGraphics
+            {
+                model = "Models/Tools/LodeStaff.obj"
+                ReturnModel = "Models/Tools/LodeStaff_Return.obj"
+                dontCastShadows = 1.0
+                
+                Diffuse
+                {
+                    0 = "Models/Tools/lodeStaff_diff.tga"
+                    1 = "Models/Tools/lodeStaff_Return_diff.tga"
+                }
+                Normal
+                {
+                    0 = "Models/Tools/LodeStaff_norm.tga"
+                    1 = "Models/Tools/LodeStaff_Return_norm.tga"
+                }
+                Glow
+                {
+                    0 = "Models/Tools/LodeStaff_norm.tga"
+                    1 = "Models/Tools/LodeStaff_Return_norm.tga"
+                }
+            }
+            #RigidBody
+            #{
+            #   activePhysics = 1
+            #   mass = 15.0
+            #   friction = 6.0
+            #}
+            Physics
+            {
+                Colliders
+                {
+                    Mesh
+                    {
+                        mass = 5.0
+                        convex = 0
+                        material = "WOOD"
+                    }
+                }
+
+                Rigidbody
+                {
+                    keyframed = 1
+                }
+            }
+            
+            Equipable
+            {
+                name = "Lode Staff"
+                icon = "Lodestaff"
+                minScale = 1.0
+                maxScale = 1.0
+                
+                category = "Wood"
+                tier = 3
+                resource = 1
+                durability = 480.0
+                damageToCharacters = 12.00
+                damageToObjects = 25.02
+                staminaDamage = 64.0
+                staminaRegenDelay = 5.0
+                attackSpeedModifier = 0.8
+                maxStackCount = 1.0
+
+                placementSound = "WoodPlace"
+                miningEmitter = "Strike Glint Emitter"
+                miningEmitterAlt = "Strike EmbersQuarter Emitter"
+
+                Equipment Slots
+                {
+                    Tool
+                }
+            }
+        }
+    }
+}

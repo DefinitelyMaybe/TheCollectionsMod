@@ -1,0 +1,698 @@
+Decor Recipes
+{
+	Bamboo Basket Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Bamboo Shaft" = 5
+				}
+				
+				Part2
+				{
+					"Vines" = 3
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Bamboo Basket" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wood Basket Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Shaft" = 5
+				}
+				
+				Part2
+				{
+					"Vines" = 3
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Wood Basket" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Book Case Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Branch" = 4
+				}
+				
+				Part2
+				{
+					"Wood Plank" = 10
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Book Case" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Shelf Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Branch" = 2
+				}
+				
+				Part2
+				{
+					"Vines" = 3
+				}
+
+				Part3
+				{
+					"Wood Shaft" = 3
+					"Bamboo Shaft" = 3
+				}
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Shelf" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Circle Door Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Plank" = 16
+				}
+				
+				Part2
+				{
+					"Latten" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Circle Door" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Plank Door Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Plank" = 16
+				}
+				
+				Part2
+				{
+					"Vines" = 6
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Plank Door" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Stick Door Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 10.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Shaft" = 10
+				}
+				
+				Part2
+				{
+					"Vines" = 6
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Stick Door" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Sundial Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Chopped Wood" = 4
+				}
+				
+				Part2
+				{
+					"Latten" = 1
+				}
+				
+				Part3
+				{
+					"Flat Rock" = 1
+				}
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Sundial" = 1
+			}
+		}
+	}
+	Wall Mount Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Cobblestone" = 10
+				}
+				
+				Part2
+				{
+					"Hardened Wood" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Hammer"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wall Mount" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wall Mount Saber Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wall Mount" = 1
+				}
+				
+				Part2
+				{
+					"Goat Skull" = 1
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Knife"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wall Mount Saber" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Window Shutter Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Plank" = 3
+				}
+				
+				Part2
+				{
+					"Vines" = 4
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Window Shutter" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Window Shutter Large Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Window Shutter" = 2
+				}	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 1
+			}
+			
+			Results
+			{
+				"Window Shutter Large" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wood Chair Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Hardened Wood" = 2
+				}
+				
+				Part2
+				{
+					"Hardened Shaft" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wood Chair" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wood Fence Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Plank" = 10
+				}
+				
+				Part2
+				{
+					"Vines" = 4
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wood Fence" = 1
+			}
+			
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wood Table Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Hardened Wood" = 4
+				}
+				
+				Part2
+				{
+					"Hardened Wood Shaft" = 4
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wood Stairs" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+	}
+	Wood Stairs Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 6.0
+			
+			Components
+			{
+				Part1
+				{
+					"Stacked Wood" = 5
+					"Wood Plank" = 5
+				}
+				
+				Part2
+				{
+					"Chopped Wood" = 2
+				}
+	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wood Stairs" = 1
+			}
+			
+			Crafting Stations
+			{
+				Crude Workbench
+				{
+					spawnOffsetOverride = <0.0, 2.0, 0.0>
+				}
+			}
+		}
+	}
+	Wood Stairs Corner Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			craftTime = 4.0
+			
+			Components
+			{
+				Part1
+				{
+					"Wood Stairs" = 1
+				}	
+			}
+			
+			Crafting Tool
+			{
+				category = "Axe"
+				tier = 2
+			}
+			
+			Results
+			{
+				"Wood Stairs Corner" = 1
+			}
+		}
+	}
+}

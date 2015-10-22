@@ -1,0 +1,39 @@
+Tool Recipes
+{
+	Lode Staff Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			priority = 2.0
+				
+			Components
+			{
+				Head
+				{
+					"Critine Shard" = 1
+				}				
+				Binding
+				{
+					"Leather Strips" = 1
+				}
+				Shaft
+				{
+					"Harden Wood Shaft" = 1
+				}
+			}
+			Results
+			{
+				"Lodestaff" = 1
+			}
+			Crafting Stations
+			{
+				Artisan Workbench
+				{
+					craftTime = 8.0
+				}				
+			}
+		}
+	}
+}

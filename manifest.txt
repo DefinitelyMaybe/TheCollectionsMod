@@ -1,0 +1,14 @@
+Manifest
+{
+	Name = "TheCollectionsMod"
+
+	Description = "The dark magic of Rawr and Dungchunker"
+
+	MajorVersion = 0.1
+
+	MinorVersion = 0.1
+
+	ScriptFile = "Scripts/TheModScript.lua"
+
+	ScriptClass = "TheModScript"
+}

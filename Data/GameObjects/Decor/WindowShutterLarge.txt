@@ -1,0 +1,80 @@
+
+GameObjects
+{
+	PlaceableObject
+	{
+		Window Shutter Large
+		{
+			Tag = "Decor"
+
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Door.lua"
+				class = "Door"
+			
+				arguments
+				{
+					timeToOpen = 2.0
+					angleToOpen = 90.0
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 2.0
+						convex = 0
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/Decor/window_shutter_2.obj"
+
+				Diffuse
+				{
+					0 = "Models/Decor/Window_Shutter_diff.tga"
+					
+				}
+				Normal
+				{
+					0 = "Models/Decor/Window_Shutter_norm.tga"
+					
+				}	
+			}
+			Placeable
+			{
+				name = "Window Shutter large"
+				icon = "Win_Shutter1"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Door"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+				placeWithNoPhysics = 1
+
+				survivalFaceCamera = 1
+				tetherDistanceModifier = 2.0
+				
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}

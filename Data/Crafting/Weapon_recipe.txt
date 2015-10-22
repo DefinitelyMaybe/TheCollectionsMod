@@ -1,0 +1,53 @@
+Weapon Recipes
+{
+	Stone Battleaxe Recipe
+	{
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+
+		LuaData
+		{
+			#The craftTime below is the amount of time it takes to craft without a crafting station (eg, ground). Listed below are optional crafting stations with their respective times.
+			craftTime = 8.0 
+			priority = 2.0
+			
+			Components
+			{
+				Head
+				{
+					"Jagged Rock" = 2
+				}				
+				Binding
+				{
+					"Vines" = 1
+				}
+				Shaft
+				{
+					"Forked Stick" = 1
+				}
+			}
+			Results
+			{
+				"Stone Battleaxe" = 1
+			}
+			Crafting Stations Optional
+			{
+				Artisan Workbench
+				{
+					craftTime = 4.0
+				}				
+				Crude Workbench
+				{
+					craftTime = 6.0
+				}		
+				Crafting Rock
+				{
+					craftTime = 7.0
+				}
+				Crafting Stump
+				{
+					craftTime = 7.0
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,40 @@
+Repair Recipes
+{
+	Repair Crude Stone Items
+	{
+		Script = "Scripts/Recipes/RepairRecipe.lua"
+
+		LuaData
+		{
+			craftingActionName = "Repairing... "
+			craftingDisplayName = "Crude Stone Item"				
+
+			#Craft times are below
+			priority = 1.0
+        
+			repairPercentage = 0.25 
+        
+			Components
+			{
+				Repair Aid
+				{
+					"Loose Pebbles" = 1
+				}
+			}
+			Valid Tools
+			{
+				"Crude Axe"
+				"Crude Pick"
+				"Crude Hammer"
+				"Crude Shovel"
+				"Crude Hoe"
+				"Crude Knife"
+				"Wood Spear"
+				"Bamboo Spear"
+				"Spiked Club"
+				"Crude Sword"
+				"Stone Battleaxe"
+			}
+		}
+	}
+}
