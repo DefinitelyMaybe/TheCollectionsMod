@@ -1,4 +1,6 @@
 --TheModScript
+include("Scripts/Core/Common.lua")
+
 -------------------------------------------------------------------------------
 if TheModScript == nil then
 	TheModScript = EternusEngine.ModScriptClass.Subclass("TheModScript")
