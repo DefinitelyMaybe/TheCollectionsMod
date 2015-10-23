@@ -45,23 +45,19 @@
             StaticGraphics
             {
                 model = "Models/Tools/LodeStaff.obj"
-                ReturnModel = "Models/Tools/LodeStaff_Return.obj"
                 dontCastShadows = 1.0
                 
                 Diffuse
                 {
                     0 = "Models/Tools/lodeStaff_diff.tga"
-                    1 = "Models/Tools/lodeStaff_Return_diff.tga"
                 }
                 Normal
                 {
                     0 = "Models/Tools/LodeStaff_norm.tga"
-                    1 = "Models/Tools/LodeStaff_Return_norm.tga"
                 }
                 Glow
                 {
                     0 = "Models/Tools/LodeStaff_norm.tga"
-                    1 = "Models/Tools/LodeStaff_Return_norm.tga"
                 }
             }
             #RigidBody
