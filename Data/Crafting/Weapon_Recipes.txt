@@ -6,7 +6,6 @@ Weapon Recipes
 
 		LuaData
 		{
-			#The craftTime below is the amount of time it takes to craft without a crafting station (eg, ground). Listed below are optional crafting stations with their respective times.
 			craftTime = 8.0 
 			priority = 2.0
 			

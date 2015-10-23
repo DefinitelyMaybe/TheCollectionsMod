@@ -7,6 +7,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
@@ -25,7 +26,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Knife"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -49,6 +50,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
@@ -67,7 +69,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Knife"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -91,6 +93,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
@@ -109,7 +112,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -119,7 +122,7 @@ Decor Recipes
 			
 			Crafting Stations
 			{
-				Crude Workbench
+				Artisan Workbench
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 				}
@@ -133,6 +136,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
@@ -156,7 +160,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -180,6 +184,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 10.0
+			priority = 5.0
 			
 			Components
 			{
@@ -198,7 +203,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Hammer"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -222,6 +227,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 10.0
+			priority = 5.0
 			
 			Components
 			{
@@ -232,7 +238,7 @@ Decor Recipes
 				
 				Part2
 				{
-					"Vines" = 6
+					"Leather Strips" = 4
 				}
 	
 			}
@@ -240,7 +246,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -264,6 +270,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 10.0
+			priority = 5.0
 			
 			Components
 			{
@@ -282,7 +289,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -328,7 +335,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Hammer"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -362,7 +369,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Hammer"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -404,7 +411,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Knife"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -446,7 +453,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -482,7 +489,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 1
+				tier = 2
 			}
 			
 			Results
@@ -506,12 +513,13 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
 				Part1
 				{
-					"Hardened Wood" = 2
+					"Hardened Wood" = 3
 				}
 				
 				Part2
@@ -524,7 +532,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -548,6 +556,7 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
@@ -555,18 +564,12 @@ Decor Recipes
 				{
 					"Wood Plank" = 10
 				}
-				
-				Part2
-				{
-					"Vines" = 4
-				}
-	
 			}
 			
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -578,7 +581,7 @@ Decor Recipes
 			{
 				Artisan Workbench
 				{
-					spawnOffsetOverride = <0.0, 2.0, 0.0>
+					spawnOffsetOverride = <0.0, 3.0, 0.0>
 				}
 			}
 		}
@@ -590,12 +593,13 @@ Decor Recipes
 		LuaData
 		{
 			craftTime = 6.0
+			priority = 5.0
 			
 			Components
 			{
 				Part1
 				{
-					"Hardened Wood" = 4
+					"Hardened Wood" = 6
 				}
 				
 				Part2
@@ -608,7 +612,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -618,7 +622,7 @@ Decor Recipes
 			
 			Crafting Stations
 			{
-				Crude Workbench
+				Artisan Workbench
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 				}
@@ -650,7 +654,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
@@ -660,7 +664,7 @@ Decor Recipes
 			
 			Crafting Stations
 			{
-				Crude Workbench
+				Artisan Workbench
 				{
 					spawnOffsetOverride = <0.0, 2.0, 0.0>
 				}
@@ -686,7 +690,7 @@ Decor Recipes
 			Crafting Tool
 			{
 				category = "Axe"
-				tier = 2
+				tier = 3
 			}
 			
 			Results
