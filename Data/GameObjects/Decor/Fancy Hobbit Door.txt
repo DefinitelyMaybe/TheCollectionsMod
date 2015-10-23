@@ -1,0 +1,77 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Fancy Hobbit Door
+		{
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/Door.lua"
+				class = "Door"
+			
+				arguments
+				{
+					timeToOpen = 2.0
+					angleToOpen = 90.0
+					
+
+					dataMetricCategory = "Door"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8					
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+						material = "WOOD"
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/fancy_hobbit_door.obj"
+
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Fancy_Hobbit_Door_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Fancy_Hobbit_Door_norm.tga"
+				}	
+			}
+			Placeable
+			{
+				name = "Fancy Hobbit Door"
+				icon = "Fancy_Hobbit_Door"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Door"
+				tier = 2
+				resource = 1
+				maxStackCount = 1.0
+				placeWithNoPhysics = 1
+
+				survivalFaceCamera = 1
+				tetherDistanceModifier = 2.0
+				
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}

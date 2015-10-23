@@ -1,0 +1,77 @@
+GameObjects
+{
+	PlaceableObject
+	{
+		Hobbit Frame 1
+		{
+			Tag = "Decor"
+			
+			Transform
+			{
+			}
+			Script
+			{
+				file = "Scripts/Objects/PlaceableObject.lua"
+				class = "PlaceableObject"
+				
+				arguments
+				{
+					encumbrance = 1
+
+					dataMetricCategory = "Decor"
+					UBPcraft = 4
+					LBPcraft = 4
+					XPcraft = 8
+				}
+			}
+			Physics
+			{
+				Colliders
+				{
+					Mesh
+					{
+						mass = 50.0
+						convex = 0
+						material = "WOOD"
+					}
+				}
+
+				Rigidbody
+				{
+					keyframed = 1
+				}
+			}
+			StaticGraphics
+			{
+				model = "Models/PlaceableObjects/Refined/hobbit_frame_1.obj"
+
+				Diffuse
+				{
+					0 = "Models/PlaceableObjects/Refined/Hobbit_Frame_1_diff.tga"
+				}
+				Normal
+				{
+					0 = "Models/PlaceableObjects/Refined/Hobbit_Frame_1_norm.tga"
+				}	
+			}
+			Placeable
+			{
+				name = "Hobbit Frame 1"
+				icon = "Hobbit_Frame_1"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Decor"
+				tier = 2
+				resource = 1
+				maxStackCount = 1.0
+				placeWithNoPhysics = 1
+
+				survivalFaceCamera = 1
+				tetherDistanceModifier = 2.0
+				
+				placementSound = "WoodPlace"
+			}
+		}
+	}
+}	
